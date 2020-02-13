@@ -18,6 +18,7 @@ const Portfolio = () => {
   let imgFiveRef = useRef(null);
   let imgSixRef = useRef(null);
   useEffect(() => {
+    // Control Animation for parallax scrolling
     var image = document.getElementsByClassName("ione");
     new simpleParallax(image, {
       scale: 1.8
@@ -61,7 +62,6 @@ const Portfolio = () => {
   return (
     <div className="container-portfolio">
       <div className="whitespace"></div>
-
       <div className="container">
         <div className="return" onClick={goToHome}>
           <h5>return</h5>

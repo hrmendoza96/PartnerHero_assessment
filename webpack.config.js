@@ -18,6 +18,14 @@ module.exports = {
         test: /\.(js|jsx)$/, //test all js or jsx files
         use: ["babel-loader"], //use babel-loader to translate the js or jsx files
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: ["file-loader"]
       }
     ]
   },

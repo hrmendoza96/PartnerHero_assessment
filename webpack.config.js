@@ -4,10 +4,12 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "public"), //Ruta principal de codigo.
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/"
   },
   devServer: {
-    port: 4000
+    port: 4000,
+    historyApiFallback: true
   },
   resolve: {
     extensions: [".js", ".jsx"]
